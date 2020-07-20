@@ -5,10 +5,11 @@ Score = {{ score }}
   <li *ngFor="let color of colors">{{color}} </li>
 </ul>
 
-First name: <input (keyup)="inputYourName($event)" />
+First name: <input (keyup)="inputYourName($event)" (keyup.enter)="clickEvent()" />
 {{firstName}}
 <br/>
-Lastname: <input #lastname (keyup) = "inputLastName(lastname.value)">
+Lastname: <input #lastname (keyup) = "inputLastName(lastname.value)"
+(keyup.enter)="clickEvent()">
 {{lastName}}
 
 <br/>

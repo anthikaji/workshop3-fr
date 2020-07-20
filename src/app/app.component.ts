@@ -23,8 +23,8 @@ export class AppComponent {
     this.lastName = input;
      }
      clickEvent(){
-       this.msg = this.firstName;
-       this.msgg = this.lastName
-    
+       //this.msg = this.firstName + ' ' +this.lastName; //String concat
+       this.msg =`${this.firstName} ${this.lastName}`;
+      
   }
 }
