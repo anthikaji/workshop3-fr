@@ -1,0 +1,24 @@
+First name: <input (keyup)="inputYourName($event)" (keyup.enter)="clickEvent()" />
+{{firstName}}
+<br/>
+Lastname: <input #lastname (keyup) = "inputLastName(lastname.value)"
+(keyup.enter)="clickEvent()">
+{{lastName}}
+
+<br/>
+<button (click)="clickEvent()">Save</button>
+
+
+
+<br/>
+<!-- <ul *ngIf ="show">
+  <li *ngFor="let color of colors">{{color}} </li>
+</ul> -->
+
+<ul *ngFor="let item of users; let i = index">
+   <li> {{item}} </li>
+<ul>
+
+    
+
+
